@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<title>The Film Bank</title>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri;
+    padding: 10px;
+    background: #000000;
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.header h1 {
+	font: Calibri;
+    font-size: 60px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:#b30000 ;
+	
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #88addd;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: underline;
+	display: inline;
+}
+
+.table {
+	display: table;   
+	margin: 0 auto;
+}
+.topnav a:hover {
+    background-color: #10E63B;
+    color: red;
+}
+
+
+.image {
+	display: block;
+	margin-left: auto;
+	    margin-right: auto;
+    background-color: #D8D8D9;
+    width: auto;
+	height: auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: grey;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+<link rel="icon"
+href="filmicon.png">
+</head>
+<body>
+
+ <div class="header">
+ 	<a href=index.html><img src= "TFBLogo.png" width: "400" height="300"></a>
+ 
+	
+   <p style="color: red; font-size: 25px;font-family:verdana; font-weight: italic;">A Small but Reliable Major Film Studio Wiki</p>
+   
+ </div>
+
+<div class="topnav">
+	<div class="table">
+  <a href="index.html">Home</a> 
+  <a href="WaltD.html">Walt Disney</a>
+  <a href="Warner.html">Warner Bros</a>
+  <a href="NBC.html">NBCUniversal</a>
+  <a href="Fox.html">Fox Entertainment</a>
+  <a href="Sony.html">Sony</a>
+  <a href="Viacom.html">Viacom</a>
+  <a href="STX.html">STX</a>
+  <a href="Animation.html">Animation</a>
+  <a href="#">Top Movies</a>
+  <a href="Extras.html">Extras</a>
+</div>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2 style="text-align: center;">INFORMATION</h2>
+      <div class="image">
+      	<img src="TR2018M.jpg" alt= "TOP MOVIES" class="center">
+		
+		
+      </div>
+      <p style="class=center;"> <center> As of<strong> July 2018 </strong>, we have already seen some incredible movies in the start of this year. Among those stand the top rated by many individuals through ratings and polls. Here are the results: </center> </p>
+	  
+
+    </div>
+    <div class="card">
+      <h2>Number 1 Rated:</h2>
+      <div class="image">
+		  <img src="Finite.jpg" class="center">
+		  
+</div>
+      <p> <center> Topping the list is <strong>Avengers: Infinity War</strong>, which isn't surprising. Mostly high tier reviews, great plot and action, and an unexpected ending, who wouldn't love it?</center> </p>
+	  
+    
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Other Top Rated Movies</h2>
+      <div class="image">
+      <img src="tre.jpg" width="250" height="370">
+      <img src="deadpool-2-poster-final.jpg" width="270" height="370">
+	  <img src="ant-man-and-the-wasp-poster.jpg" width="260" height="370">
+	  <img src="player1.jpeg" width="260" height="370">
+	  <img src="black-panther-poster.jpg" width="230" height="370">
+  
+  </div>
+      <p style= "font-style: italic;"> Other top rated movies include: <br>
+	  <strong> The Incredibles 2 </strong> <br>
+	  <strong> Deadpool 2 </strong> <br>
+	  <strong> Antman and The Wasp </strong> <br>
+	  <strong> Ready Player One </strong> <br>
+	  <strong> Black Panther </strong> <br>
+	  </p>
+    </div>
+	
+	
+    <div class="card">
+      <h3>Upcoming 2018 Movies</h3>
+      <div class="image">
+		 <img src ="fallout.jpeg" class = "center"> <p> <center>  <strong>Mission: Impossible</strong></center> </p> <br> 
+		 <p style="class=center;">Fallout</p>
+		 <img src ="equalizer2.jpg" class = "center"> <p> <center><strong>The Equalizer 2</strong></center> </p> <br>
+		 <img src ="venom.jpeg" class = "center"><p> <center> <strong>Venom</strong> </center> </p>
+	  </div>
+    </div>
+    <div class="card">
+      <h3>Comments & More:</h3>
+      <p><strong> 2 comments:</strong></p> 
+	  <h5> <strong>Niu7K<strong>: Venom... :O </h5>
+	  <h5> <strong>Ergo<strong>: Fallout is gonna be interesting... </h5>	  
+	  
+<div id="rating">
+    <button class="like">Like</button>
+    <span class="likes">28</span>
+    <button class="dislike">Dislike</button>
+    <span class="dislikes">0</span>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js">
+	
+</script>
+<script src="like-dislike.min.js">
+	
+</script>
+
+<script type="text/javascript">
+    $('#rating').likeDislike({
+        initialValue: 0,
+        click: function (value, l, d, event) {
+            var likes = $(this.element).find('.likes');
+            var dislikes = $(this.element).find('.dislikes');
+
+            likes.text(parseInt(likes.text()) + l);
+            dislikes.text(parseInt(dislikes.text()) + d);
+
+            // $.ajax({
+            //     url: 'url',
+            //     type: 'post',
+            //     data: 'value=' + value,
+            // });
+        }
+    });
+</script>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>We at The Film Bank take no credit for any movies/clips or etc. published here, all rights go to their respective owners.</h2>
+</div> 
